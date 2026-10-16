@@ -3,7 +3,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/mahesh1832001-art/knoweldge_assistance.git
 cd knowledge_assistant
 ```
 

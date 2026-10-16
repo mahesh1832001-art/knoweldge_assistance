@@ -1,0 +1,171 @@
+
+#root {
+  width: 100%;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.header h1 {
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.header p,
+.muted {
+  color: #64748b;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #1e293b;
+}
+
+.section-title {
+  margin-top: 28px !important;
+}
+
+label {
+  display: block;
+  margin: 16px 0 8px;
+  font-weight: 600;
+}
+
+input[type="file"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: white;
+  font: inherit;
+}
+
+input[type="file"] {
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 14px;
+  padding: 11px 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 7px;
+  color: #1e40af;
+  overflow-wrap: anywhere;
+}
+
+.message button {
+  margin: 0;
+  padding: 0 6px;
+  background: transparent;
+  color: inherit;
+  font-size: 22px;
+}
+
+.selected-file {
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+
+.document-list {
+  padding-left: 20px;
+}
+
+.document-list li {
+  margin-bottom: 14px;
+  overflow-wrap: anywhere;
+}
+
+.document-list small {
+  display: block;
+  margin-top: 4px;
+  color: #64748b;
+}
+
+.answer {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  overflow-wrap: anywhere;
+}
+
+.answer-text,
+.source p {
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.source {
+  margin-top: 12px;
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.source small {
+  color: #64748b;
+}
+
+@media (max-width: 750px) {
+  .app {
+    padding: 16px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

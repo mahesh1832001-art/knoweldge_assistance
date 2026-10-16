@@ -1,0 +1,77 @@
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# ==============================
+# FastAPI / Backend
+# ==============================
+
+# Uploaded documents
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Application logs
+backend/logs/
+logs/
+*.log
+
+# ChromaDB persistent data
+backend/chroma_data/
+chroma_data/
+
+# Local databases and temporary files
+*.db
+*.sqlite
+*.sqlite3
+*.tmp
+*.bak
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# React / Node.js
+# ==============================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==============================
+# Editors and operating systems
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+frontend_backup/

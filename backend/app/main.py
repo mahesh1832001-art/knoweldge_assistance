@@ -12,12 +12,12 @@ from app.middleware.rate_limiter import RateLimiter
 
 
 app = FastAPI(
-    title="Mini Knowledge Assistant",
+    title="Knowledge Assistant",
     description="Document-based question answering using RAG",
     version="1.0.0",
 )
 
-# Allow requests from the React development server.
+#enter backend and frontend domains
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
